@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const {data: blogs, isPending, error} = useFetch('https://servergi.onrender.com/');
+  const {data: blogs, isPending, error} = useFetch('https://servergi.onrender.com/blogs');
   return (
     <div className="home">
         {error && <div> {error} </div>}
